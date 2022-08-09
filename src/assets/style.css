@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.video-wrapper {
+  display: flex;
+  width: 50vw;
+  height: 100vh;
+}
+
+.video-wrapper video {
+  width: 50vw;
+  object-fit: cover;
+}
+
+video::cue {
+  font-size: 1rem;
+}
+
+.welcomeTxt {
+  position: absolute;
+  color: white;
+  top: 13vh;
+  left: 5.5vw;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  align-items: center;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a {
+text-decoration: none;}
+
+.btn {
+  position: relative;
+  width: 336px;
+  height: auto;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-start;
+  border: none;
+  font-size: 18px;
+  padding: 0px 24px 0px 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  background: rgba(17, 17, 17, 0.1);
+  align-items: center;
+  color: rgb(17, 17, 17);
+  transition: background-color 0.4s ease 0s;
+  font-weight: 500;
+}
+
+.btn:hover {
+  box-shadow: rgb(125, 0, 254) 0px 0px 0px 1px;
+}
+
+.spanA {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  font-size: 14px;
+  font-family: apercu-pro;
+  font-weight: 500;
+  border-radius: 100px;
+  background: rgb(125, 0, 254);
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.spanB {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  text-align: left;
+  padding: 18px 0px;
+  cursor: pointer;
+}
+
+.btn2{
+
+    cursor: pointer;
+    pointer-events: initial;
+    background: rgb(125, 0, 254);
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 30px 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: 700;
+    transition: all 0.1s ease-in-out 0s;
+    transform: perspective(1000px) translateZ(0px);
+    border-radius: 16px;
+    flex-direction: row;
+    width: 100%;
+    max-width: 332px;
+    height: 68px;
+    padding: 0px 24px 3px;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: none;
+    letter-spacing: initial;
+    text-align: center;
+    margin: 0px;
+}
+
+.btn2:hover{
+    transform: perspective(1000px) translateZ(25px);
+}
+
+form{
+      display: flex;
+  flex-direction: column;
+  width: 50vw;
+  align-items: center;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.form{
+
+    display: flex;
+    flex-direction: column;
+    padding: 46px 32px 32px;
+    height: 100%;
+    animation: 0.6s ease-out 0s 1 normal none running fWWQhU;
+    overflow: auto;
+    align-items: center;
+}
+
+.heading span{
+
+    margin-bottom: 24px;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+    line-height: 140%;
+    font-size: 20px;
+    color: rgb(17, 17, 17);
+}
+
+.form-input{
+
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-radius: 0px;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+    appearance: none;
+    line-height: 22px;
+    font-size: 20px;
+    background: transparent;
+    padding: 12px 0px;
+    margin-bottom: 24px;
+    color: rgb(17, 17, 17);
+    outline: none;
+    width: 100%;
+}
+
+.form-input:focus{
+    border-bottom: 2px solid
+}
+
+.undertaking{
+    display: flex;
+    flex-direction: row;
+    margin: 16px 0px 32px;
+}
+
+.checkbox{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+
+}
+
+.checkbox-input{
+
+    opacity: 0;
+    cursor: pointer;
+    z-index: 9999;
+    width: 22px;
+    height: 22px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.check{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 22px;
+    width: 22px;
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 4px;
+}
+
+.check::after{
+
+    content: "";
+    position: absolute;
+}
+
+.checkmark::after{
+
+    animation: 0.2s ease-in-out 0s 1 normal none running gWpsBT;
+    left: 5px;
+    top: 0px;
+    width: 6px;
+    height: 12px;
+    border-style: solid;
+    border-color: rgb(17, 17, 17);
+    border-image: initial;
+    border-width: 0px 3px 3px 0px;
+    transform: rotate(45deg);
+}
+
+
+.declaration span{
+
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 14px;
+    margin-left: 8px;
+    max-height: 30vh;
+    overflow-y: auto;
+    line-height: 130%;
+}
+
+
